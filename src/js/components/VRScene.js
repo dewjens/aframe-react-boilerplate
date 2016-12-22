@@ -10,6 +10,7 @@ import Camera from './Camera';
 import Text from './Text';
 import Sky from './Sky';
 import Cursor from './Cursor';
+import Animation from './Animation';
 import ArtObjectContainer from './ArtObjectContainer';
 import Navigation from './Navigation';
 import axios from 'axios'
@@ -31,6 +32,11 @@ class VRScene extends React.Component {
     super(props);
     this.state = {
       color: 'red',
+      // fuse: true,
+      // fuseTimeout: 1500, 
+      vrMode: false, 
+      assetIndex: 0, 
+      selectedImage: imageArray[0], 
       vrMode: false,
       assetIndex: 0,
       selectedImage: imageArray[0],
